@@ -1,0 +1,160 @@
+.card__img,
+.loading__img {
+  width: 100%;
+  height: 60%;
+  object-fit: contain;
+  background: #f6f6f6;
+  padding: 10px;
+}
+
+.product__wrapper,
+.loading {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-top: 100px;
+}
+.product__card,
+.loading__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px gray;
+  height: 600px;
+  overflow: hidden;
+}
+
+.loading__img {
+  background: #0005;
+}
+
+.loading__desc {
+  width: 100%;
+  height: 40px;
+  background: #0005;
+}
+.loading__desc:nth-child(2) {
+  width: 80%;
+}
+
+.loading__desc:nth-child(3) {
+  width: 60%;
+}
+
+@media (max-width: 1200px) {
+  .product__wrapper,
+  .loading {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .product__wrapper,
+  .loading {
+    grid-template-columns: 1fr;
+  }
+}
+
+.see__details-btn {
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  transition: 0.4s;
+}
+
+.see__details-btn:hover {
+  background: white;
+  color: black;
+}
+
+.product__card__info {
+  display: flex;
+  height: 40%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.loading__info {
+  display: flex;
+  height: 40%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.product__price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.products__theme {
+  color: blue;
+}
+
+.products__section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+}
+
+.products__title {
+  font-size: 50px;
+}
+
+.product__card__stars {
+  width: 50%;
+}
+
+.view-more__btn {
+  width: 196px;
+  height: 46px;
+  border-radius: 10px;
+  background: blue;
+  color: white;
+  border: 1px solid blue;
+  transition: 0.4s;
+  margin: 0 auto;
+}
+
+.view-more__btn:hover {
+  background: white;
+  color: blue;
+}
+
+.todo__card {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+.change__btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 80px;
+  button {
+    color: white;
+    background: green;
+    border: 1px solid green;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    transition: 0.4s;
+  }
+  button:hover {
+    color: green;
+    background: white;
+  }
+}
