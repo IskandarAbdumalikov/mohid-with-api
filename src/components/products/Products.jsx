@@ -11,7 +11,7 @@ const Products = () => {
   const [cardCount, setCardCount] = useState(1);
   const [loading, setLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState("");
-  const [option, setOption] = useState("users");
+  const [option, setOption] = useState("products");
   const cardCounts = 3;
 
   useEffect(() => {
